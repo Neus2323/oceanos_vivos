@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña ODS 14: Océanos Vivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Asociación Océanos Vivos</h1>
+        <p>Campaña por la conservación marina y la sostenibilidad marina</p>
+    </header>
+
+    <nav>
+        <a href="problema.html">El Problema</a></button>
+        <a href="soluciones.html">Las posibles soluciones</a></button>
+        <a href="participacion.html">Participa</a></button>
+    </nav>
+
+    <main>
+
+        <section id="page-index" class="page-content active">
+            <h2>Bienvenido a Océanos Vivos</h2>
+            <p><strong>Océanos Vivos</strong> es una asociación sin ánimo de lucro dedicada a proteger los ecosistemas marinos, combatir la contaminación plástica y promover la pesca sostenible a nivel local e internacional.</p>
+
+            <h3 style="margin-top: 1.5rem; color: var(--color-dark);">Nuestra Causa: ODS 14 - Vida Submarina</h3>
+            <p>El Objetivo de Desarrollo Sostenible 14 de las Naciones Unidas busca conservar y utilizar sosteniblemente los océanos, los mares y los recursos marinos. Los océanos mueven sistemas mundiales que hacen que la Tierra sea habitable para la humanidad. Protegerlos es vital para nuestro futuro.</p>
+            <img src="imagenes/indice.jpg">
+
+            <button class="btn-action" onclick="showPage('problema')">Descubre el problema</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Asociación Océanos Vivos — Proyecto educativo sobre el ODS 14</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Ocultar todas las secciones
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Quitar clase activa a todos los botones
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Mostrar la sección seleccionada
+            document.getElementById('page-' + pageId).classList.add('active');
+
+            // Añadir clase activa al botón correspondiente
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
