@@ -101,10 +101,12 @@
         ul, ol {
             margin-left: 1.5rem;
             margin-bottom: 1rem;
+            font-family: 'Times New Roman', sans-serif;
         }
 
         li {
             margin-bottom: 0.5rem;
+            font-family: 'Times New Roman', sans-serif;
         }
 
         .btn-action {
