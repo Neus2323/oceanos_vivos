@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campaña ODS 14: Océanos Vivos</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        #informacion-campana table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: #fff;
+        }
+        #informacion-campana th,
+        #informacion-campana td {
+            border: 1px solid #cbd5d9;
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        #informacion-campana th { background: #e9ecef; }
+        #informacion-campana tbody tr:nth-child(even) { background: #f7f9fa; }
+        @media (max-width: 600px) {
+            #informacion-campana th,
+            #informacion-campana td { padding: 0.5rem; }
+        }
+    </style>
+
 </head>
 <body>
 
@@ -20,7 +43,7 @@
     </nav>
 
     <main>
-
+font-family: 'Times New Roman', sans-serif;
         <section id="page-index" class="page-content active">
             <h2>Bienvenido a Océanos Vivos</h2>
             <p><strong>Océanos Vivos</strong> es una asociación sin ánimo de lucro dedicada a proteger los ecosistemas marinos, combatir la contaminación plástica y promover la pesca sostenible a nivel local e internacional.</p>
@@ -29,6 +52,23 @@
             <p>El Objetivo de Desarrollo Sostenible 14 de las Naciones Unidas busca conservar y utilizar sosteniblemente los océanos, los mares y los recursos marinos. Los océanos mueven sistemas mundiales que hacen que la Tierra sea habitable para la humanidad. Protegerlos es vital para nuestro futuro.</p>
             <img src="imagenes/indice.jpg">
 
+
+            <section id="informacion-campana">
+                <h3 style="margin-top: 1.5rem; color: var(--color-dark);">Información de la campaña</h3>
+                <table>
+                    <thead>
+                        <tr><th>Aspecto</th><th>Información</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Asociación</td><td>Océanos Vivos, organización sin ánimo de lucro.</td></tr>
+                        <tr><td>Objetivo</td><td>ODS 14: conservar y utilizar sosteniblemente los océanos, los mares y los recursos marinos.</td></tr>
+                        <tr><td>Áreas de actuación</td><td>Protección de los ecosistemas marinos, reducción de la contaminación por plásticos y promoción de la pesca sostenible.</td></tr>
+                        <tr><td>Cómo colaborar</td><td>Reducir los plásticos, elegir pescado de origen sostenible, participar en limpiezas locales y difundir el mensaje.</td></tr>
+                        <tr><td>Contacto</td><td>contacto@oceanosvivos-ejemplo.org</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
             <button class="btn-action" onclick="showPage('problema')">Descubre el problema</button>
         </section>
 
@@ -36,6 +76,8 @@
 
     <footer>
         <p>&copy; 2026 Asociación Océanos Vivos — Proyecto educativo sobre el ODS 14</p>
+        <p>Neus Bonafont Chiner</p>
+        <p>Fuente: Chat GPT    Imagenes: Google</p>
     </footer>
 
     <script>
